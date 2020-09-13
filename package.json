@@ -1,0 +1,32 @@
+{
+  "name": "covidvaulthomepage",
+  "version": "0.1.0",
+  "description": "Homepage for the CovidVault project",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gzipper c ./src ./gzip -v"
+  },
+  "devDependencies": {
+    "gzipper": "^4.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SimpleProgrammingAU/CovidVaultHomepage.git"
+  },
+  "keywords": [
+    "coronavirus",
+    "COVID",
+    "COVID-19",
+    "contact",
+    "tracing",
+    "registration",
+    "register"
+  ],
+  "author": "Simple Programming",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SimpleProgrammingAU/CovidVaultHomepage/issues"
+  },
+  "homepage": "https://github.com/SimpleProgrammingAU/CovidVaultHomepage#readme"
+}
