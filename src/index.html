@@ -26,7 +26,7 @@
     <script src="js/pace.min.js"></script>
 
     <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
-    <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48 64x64" type="image/vnd.microsoft.icon">
+    <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48 64x64" type="image/vnd.microsoft.icon" />
   </head>
 
   <body id="top">
@@ -43,10 +43,10 @@
           <li><a class="smoothscroll" href="#about" title="about">About</a></li>
           <li><a class="smoothscroll" href="#pricing" title="pricing">Pricing</a></li>
           <li><a class="smoothscroll" href="#testimonials" title="testimonials">Testimonials</a></li>
-          <li><a class="smoothscroll" href="#download" title="download">Download</a></li>
+          <li><a class="smoothscroll" href="#download" title="download">Demo</a></li>
         </ul>
 
-        <a href="#" title="sign-up" class="button button-primary cta">Sign Up</a>
+        <a href="dashboard" title="sign-up" class="button button-primary cta">Sign Up</a>
       </nav>
 
       <a class="header-menu-toggle" href="#"><span>Menu</span></a>
@@ -73,19 +73,14 @@
               for Aussie businesses <br />
               during the COVID-19 recovery.
             </h1>
-
             <div class="buttons" data-aos="fade-up">
-              <a href="#download" class="smoothscroll button stroke">
+              <a href="dashboard" class="smoothscroll button stroke">
                 <span class="icon-circle-down" aria-hidden="true"></span>
-                Download App
+                Get Started
               </a>
-              <a
-                href="http://player.vimeo.com/video/14592941?title=0&amp;byline=0&amp;portrait=0&amp;color=39b54a"
-                data-lity
-                class="button stroke"
-              >
+              <a href="dashboard" data-lity class="button stroke">
                 <span class="icon-play" aria-hidden="true"></span>
-                Watch Video
+                Sign In
               </a>
             </div>
           </div>
@@ -290,9 +285,9 @@
           <h1 class="intro-header" data-aos="fade-up">Our Pricing Options</h1>
 
           <p data-aos="fade-up">
-            <b>CovidVault</b> is not intended as a for-profit product. The pricing structure is intended to ensure the service
-            can be delivered to as many Aussie businesses as possible. To ensure access is maintained, heavy users are asked to
-            pay a small fee to offset the cost of data storage.
+            <b>CovidVault</b> is not intended as a for-profit product. Pricing is structured to ensure the service can be
+            delivered to as many Aussie businesses as possible. To ensure access is maintained, heavy users are asked to pay a
+            small fee to offset the cost of hosting and operations.
           </p>
         </div>
 
@@ -302,16 +297,19 @@
               <div class="plan-block" data-aos="fade-up">
                 <div class="plan-top-part">
                   <h3 class="plan-block-title">Free Tier</h3>
-                  <p class="plan-block-price">0.0<sup>¢</sup></p>
-                  <p class="plan-block-per">per API Call</p>
+                  <p class="plan-block-price">$0</p>
+                  <p class="plan-block-per">per month</p>
                 </div>
 
                 <div class="plan-bottom-part">
                   <ul class="plan-block-features">
-                    <li>The first <span>3,000</span> API Calls</li>
+                    <li><span>3,000</span> API requests</li>
+                    <li>Your brand on check-in</li>
+                    <li>Utilise post-check-in ad-space</li>
+                    <li>Specify conditions of entry</li>
                   </ul>
 
-                  <a class="button button-primary large" href="">Get Started</a>
+                  <a class="button button-primary large" href="dashboard">Get Started</a>
                 </div>
               </div>
             </div>
@@ -321,16 +319,17 @@
               <div class="plan-block primary" data-aos="fade-up">
                 <div class="plan-top-part">
                   <h3 class="plan-block-title">Paid Tier</h3>
-                  <p class="plan-block-price">0.1<sup>¢</sup></p>
-                  <p class="plan-block-per">per API Call</p>
+                  <p class="plan-block-price">$25</p>
+                  <p class="plan-block-per">per block</p>
                 </div>
 
                 <div class="plan-bottom-part">
                   <ul class="plan-block-features">
-                    <li><span>Unlimited</span> API Calls thereafter</li>
+                    <li><span>2,500</span> API requests</li>
+                    <li>Rolls over into subsequent months</li>
+                    <li>Billed in $25 blocks for invoicing simplicity</li>
                   </ul>
-
-                  <a class="button button-primary large" href="">Get Started</a>
+                  <a class="button button-primary large" href="dashboard">Get Started</a>
                 </div>
               </div>
             </div>
@@ -356,9 +355,7 @@
         <div id="testimonial-slider" data-aos="fade-up">
           <div class="slides owl-carousel">
             <div>
-              <p>
-                These testimonials will be updated soon.
-              </p>
+              <p>These testimonials will be updated soon.</p>
 
               <div class="testimonial-author">
                 <img src="images/avatars/user-02.jpg" alt="Author image" />
@@ -370,9 +367,7 @@
             </div>
 
             <div>
-              <p>
-                These testimonials will be updated soon.
-              </p>
+              <p>These testimonials will be updated soon.</p>
 
               <div class="testimonial-author">
                 <img src="images/avatars/user-03.jpg" alt="Author image" />
@@ -402,9 +397,7 @@
             Would you like to see how visitors will check-in to your business? A live demonstration page that displays the
             visitor experience is available for you to try out!
           </p>
-          <a class="button button-primary large" href="https://www.simpleprogramming.com.au/covid/?id=8634291744168120016"
-            >Demo</a
-          >
+          <a class="button button-primary large" href="https://www.covidvault.com.au/checkin/?id=8634291744168120016">Demo</a>
         </div>
       </div>
     </section>
@@ -459,6 +452,7 @@
               <li><a href="https://www.simpleprogramming.com.au/">Blog</a></li>
               <li><a href="#">FAQ</a></li>
               <li><a href="privacy.html">Privacy</a></li>
+              <li><a href="dashboard">Client Login</a></li>
             </ul>
           </div>
           <!-- end footer-site-links -->
@@ -470,6 +464,7 @@
 
             <div class="subscribe-form">
               <form id="mc-form" class="group" novalidate="true">
+                <input type="text" class="email full-width" value="" name="NAME" id="mc-name" placeholder="Name" required="" />
                 <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="" />
 
                 <input type="submit" name="subscribe" value="Send" />
@@ -507,6 +502,7 @@
 
     <!-- Java Script
     ================================================== -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lc7nNQZAAAAAJDPSLLeBDp75pHek9ijLsiNHFjl"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>

@@ -1,9 +1,16 @@
 # Canonical https/www
 <IfModule mod_rewrite.c>
-	RewriteCond %{HTTPS} off [OR]
+	RewriteEngine On
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+	RewriteCond %{HTTPS} off
+	# First rewrite to HTTPS:
+	# Don't put www. here. If it is already there it will be included, if not
+	# the subsequent rule will catch it.
+	RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+	# Now, rewrite any request to the wrong domain to use www.
+	# [NC] is a case-insensitive match
 	RewriteCond %{HTTP_HOST} !^www\. [NC]
-	RewriteCond %{HTTP_HOST} ^(.*)$  [NC]
-	RewriteRule (.*) https://www.%1/$1 [R=301,L]
+	RewriteRule .* https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 </IfModule>
 
 
@@ -58,3 +65,5 @@ BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
    Header set Cache-Control "max-age=2419200"
   </FilesMatch>
 </IfModule>
+
+RewriteRule ^([a-zA-Z]+)$ api/controller/redir.php?shortname=$1 [L]
