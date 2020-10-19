@@ -80,7 +80,7 @@
             name,
             email,
           },
-          method: "post",
+          method: "get",
           success: () => {
             $(".subscribe-message").text("Request sent successfully.");
           },
